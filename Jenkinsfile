@@ -1,7 +1,9 @@
 //Picking a build agent labeled "ec2" to run pipeline on
 //node ('ec2'){
 pipeline {
-    agent any
+    agent {
+    label 'slave'
+    }
     options { skipStagesAfterUnstable() }
 stages{
   stage ('Pull from SCM'){
