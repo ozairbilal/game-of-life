@@ -83,3 +83,4 @@ stage ('Stage image'){
     }
   }
 }
+}
